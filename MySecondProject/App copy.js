@@ -16,7 +16,7 @@ export default function MyApp() {
        borderColor: "gray",
        borderWidth: 1
      }}
-    />
+     defaultValue="Enter your Input!"/>
     </View>
   );
 }
