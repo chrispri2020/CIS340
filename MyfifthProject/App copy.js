@@ -6,7 +6,7 @@ export default function App(){
    <View style={styles.container}>
 	  <Text style={styles.yellow}> Just Yellow text </Text>
 	  <Text style={styles.largGreen}> This is big green </Text>
-	  <Text style={[styles.yellow, styles.largGreen]}> Yellow text, the big green text </Text>
+	  <Text style={[styles.yellow, styles.largGreen]}> Yellow text, then big green text </Text>
 	  <Text style={[styles.largGreen, styles.yellow]}> Big green text, the yellow text </Text>
   </View>
   );
