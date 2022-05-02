@@ -1,38 +1,58 @@
 //import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import {Text, View, FlatList } from 'react-native';
+import {Text, Image, ScrollView } from 'react-native';
 
-export default States = () => {
-  return(
-    <View style={{flex: 1, paddingTop:22}}>
-      <FlatList
-        data={[
-          {key: 'Alabama'},
-          {key: 'Alaska'},
-          {key: 'Arizona'},
-          {key: 'Arkansas'},
-          {key: 'California'},
-          {key: 'Colorado'},
-          {key: 'Delaware'},
-          {key: 'Florida'},
-          {key: 'Hawaii'},
-          {key: 'Idaho'},
-          {key: 'Illinois'},
-          {key: 'Indiana'},
-          {key: 'Iowa'},
-          {key: 'Kansas'},
-          {key: 'Kentucky'},
-          {key: 'Maine'},
-          {key: 'Maryland'},
-          {key: 'Massachusetts'},
-          {key: 'Michigan'},
-          {key: 'Minnesota'},
-          {key: 'Mississippi'}
+const dog = {
+  uri: 'https://raw.gitubusercontent.com/AbdunabiRamadan/CIS340/master/images/dog2.png' ,
+  width: 64,
+  height: 64
+};
 
-        ]}
-      renderItem={({item}) => <Text style={{padding: 10, fontSize: 20, height: 44,}}> {item.key} </Text>}
-      />
-    </View>
+export default MyScrollViewApp = () => {
+  
+    return (
 
-  );
-  }
+      <ScrollView style={{paddingL: 40}}>
+        <Text style={{fontSize: 80}}> Try to scroll down </Text>
+        <Image source={require('./assets/dog2.png')} style={{width: 80, height: 80}} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Text style={{fontSize: 80}}> Try to scroll down again, if you like </Text>
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Text style={{fontSize: 80}}> Try to scroll down </Text>
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Text style={{fontSize: 80}}> Try to scroll down again </Text>
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Text style={{fontSize: 80}}> React native components!</Text>
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+        <Image source={dog} />
+      </ScrollView>
+    )
+}

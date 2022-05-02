@@ -1,9 +1,10 @@
-//import { StatusBar } from 'expo-status-bar';
+
+  //import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import {Text, View, FlatList } from 'react-native';
 
 export default StatesApp = () => {
-  return (
+  return(
     <View style={{flex: 1, paddingTop:22}}>
       <FlatList
         data={[
