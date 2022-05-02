@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 export default function App(){
 
  const csuLogo = {
-   uri: "https://raw.githubusercontent.com/AbdunabiRamadan/CIS340/master/images/rams.png"
+   uri: "https://raw.githubusercontent.com/AbdunabiRamadan/CIS340/master/images/logo.png"
 };
 
  return (
